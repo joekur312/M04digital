@@ -1,0 +1,145 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #e0f0ff;
+  color: #003f7f;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navbar */
+.navbar {
+  background: #0077cc;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  padding: 0.5rem;
+  transition: background 0.3s ease;
+}
+
+.nav-links a:hover {
+  background: #00aaff;
+  border-radius: 5px;
+}
+
+/* Sections */
+section {
+  padding: 4rem 2rem;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease-out;
+}
+
+/* Reveal effect on scroll */
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Profile Section */
+.profile-img {
+  width: 150px;
+  border-radius: 50%;
+  border: 1px solid #0077cc;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+  transform: scale(1.05);
+}
+
+/* Skills and Offers */
+.skills, .offers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.skill-card, .offer-card {
+  background: white;
+  padding: 1.5rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, background 0.3s ease;
+  cursor: pointer;
+}
+
+.skill-card:hover, .offer-card:hover {
+  transform: translateY(-5px);
+  background: #cceeff;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #0077cc;
+  color: white;
+  padding: 1rem;
+  margin-top: 3rem;
+}
+/* Competency Categories */
+.competency-category {
+  text-align: left;
+  max-width: 900px;
+  margin: 2rem auto;
+  background: white;
+  padding: 1.5rem 2rem;
+  border-left: 5px solid #0077cc;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.competency-category:hover {
+  transform: translateY(-5px);
+}
+
+.competency-category h3 {
+  color: #0077cc;
+  margin-bottom: 1rem;
+}
+
+.competency-category ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.sub-heading {
+  margin-top: 3rem;
+  font-size: 1.5rem;
+  color: #005fa3;
+}
+
+/* Tech Stacks & Certifications */
+.tech-stacks, .certifications {
+  margin-top: 1rem;
+}
